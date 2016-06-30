@@ -18,6 +18,18 @@ Run development server to serve static files in `static/` directory.
 $ npm run serve
 ```
 
+## Page listing
+
+Following pages to develop.
+
+* **Home** (`index.html`)
+* **Courses** (`courses.html`)
+* **Course Detail** (`course.html`)
+* **About** (`about.html`)
+* **Contact** (`contact.html`)
+* **Request a course** (`request-a-course.html`)
+
+
 ## Task lists
 
 Tasks for development.
