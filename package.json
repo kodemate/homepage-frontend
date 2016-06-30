@@ -1,0 +1,31 @@
+{
+  "name": "homepage-frontend",
+  "version": "1.0.0",
+  "description": "The frontend development for homepage, http://kodemate.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "webpack-dev-server --content-base=static --hot --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kodemate/homepage-frontend.git"
+  },
+  "keywords": [
+    "kodemate",
+    "webpack",
+    "frontend",
+    "html",
+    "css",
+    "web"
+  ],
+  "author": "Pete Houston <contact@petehouston.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kodemate/homepage-frontend/issues"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
