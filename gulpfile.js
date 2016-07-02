@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var del = require('del');
+var runsequence = require('run-sequence');
 
 
 gulp.task('jade', function () {
@@ -44,7 +45,9 @@ gulp.task('clean', function () {
 });
 
 // default task
-gulp.task('default', ['clean', 'build']);
+gulp.task('default', function () {
+    runsequence('clean', 'build');
+});
 
 // watch
 gulp.task('watch', function () {
