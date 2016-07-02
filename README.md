@@ -4,18 +4,50 @@ The frontend development for homepage, [kodemate](http://kodemate.com).
 
 ## Setup
 
-Only basic node dependencies.
+Only basic node and bower dependencies.
 
 ```
 $ npm install
+
+$ bower install
 ```
 
 ## Usage
 
-Run development server to serve static files in `static/` directory.
+Compile `.jade` to `.html`:
 
 ```
-$ npm run serve
+$ gulp jade
+```
+
+Compile `.scss` to `.css`:
+
+```
+$ gulp sass
+```
+
+Copy `src/vendor` to `build/vendor`:
+
+```
+$ gulp assets
+```
+
+To build all, which includes `jade, scss, assets`:
+
+```
+$ gulp build
+```
+
+To clean `build` directory:
+
+```
+$ gulp clean
+```
+
+To automatically watch for source change and re-build,
+
+```
+$ gulp watch
 ```
 
 ## Page listing
