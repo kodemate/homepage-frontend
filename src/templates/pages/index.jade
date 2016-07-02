@@ -1,0 +1,164 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - Index Page
+
+block prepend css
+    link(rel="stylesheet", href="css/index.css")
+
+block content
+    section(id="block-meta")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-6")
+                    ul(class="meta-left")
+                        li(class="meta--left__item")
+                            i(class="fa fa-phone") (+84)-906-284-977
+                        li(class="meta--left__item")
+                            i(class="fa fa-envelope") contact@kodemate.com
+                div(class="col-md-6")
+                    ul(class="meta--right")
+                        li(class="meta--right__heading") Network:
+                        li(class="meta--right__item"): i(class="fa fa-facebook")
+                        li(class="meta--right__item"): i(class="fa fa-twitter")
+                        li(class="meta--right__item"): i(class="fa fa-google-plus")
+    section(id="masthead")
+        nav(class="navbar navbar-default", role="navigation")
+            div(class="container-fluid")
+                div(class="navbar-header")
+                    button(type="button", class="navbar-toggle", data-toggle="collapse", data-target=".navbar-ex1-collapse")
+                        span(class="sr-only") Toggle navigation
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                        span(class="icon-bar")
+                    a(class="navbar-brand", href="#") KodeMate
+
+                div(class="collapse navbar-collapse navbar-ex1-collapse")
+                    ul(class="nav navbar-nav")
+                        li(class="active"): a(href="#") Link
+                        li: a(href="#") Link
+                    ul(class="nav navbar-nav navbar-right")
+                        li: a(href="#") Link
+
+        div(class="jumbotron")
+            div(class="container")
+                h1 Hello, world!
+                p Contents ...
+                p: a(class="btn btn-primary btn-lg") Learn more
+
+    section(id="block-benefits")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Benefits of KodeMate
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt tenetur unde.
+
+            div(class="row")
+                div(class="col-md-4")
+                    div(class="benefits--icon"): i(class="fa fa-facebook")
+                    div(class="benefits-text")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
+                div(class="col-md-4")
+                    div(class="benefits--icon"): i(class="fa fa-facebook")
+                    div(class="benefits-text")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
+                div(class="col-md-4")
+                    div(class="benefits--icon"): i(class="fa fa-facebook")
+                    div(class="benefits-text")
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
+
+
+    section(id="block-courses")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Course List
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque, suscipit eveniet!
+
+            div(class="row")
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(src="http://placehold.it/350x150", alt="")
+                        div(class="courses--card__title")
+                            h4 Getting started with PHP web development
+                        div(class="courses--card__summary")
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
+                        div(class="courses--card__actions")
+                            button(class="btn btn-danger") Details
+                            button(class="btn btn-danger") Register
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(src="http://placehold.it/350x150", alt="")
+                        div(class="courses--card__title")
+                            h4 Getting started with PHP web development
+                        div(class="courses--card__summary")
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
+                        div(class="courses--card__actions")
+                            button(class="btn btn-danger") Details
+                            button(class="btn btn-danger") Register
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(src="http://placehold.it/350x150", alt="")
+                        div(class="courses--card__title")
+                            h4 Getting started with PHP web development
+                        div(class="courses--card__summary")
+                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
+                        div(class="courses--card__actions")
+                            button(class="btn btn-danger") Details
+                            button(class="btn btn-danger") Register
+
+            div(class="row")
+                div(class="col-md-9")
+                    p you can also request a course of your interests
+                div(class="col-md-3")
+                    button(class="btn btn-danger") Request a course
+
+    section(id="block-tutors")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h3 About tutors
+                    p A bit information about tutors that will train you in technical courses.
+            div(class="row")
+                div(class="col-md-6")
+                    img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive", width="256")
+                div(class="col-md-6")
+                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias beatae quaerat aspernatur ad reiciendis placeat, sit nisi repellat accusamus culpa ratione dolorem dolor autem error repudiandae nam, quidem, architecto libero.
+
+    section(id="block-cta")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 So do you really want to level up your coding skills and become a good programmer?
+                    button(class="btn btn-danger") Register now
+
+    footer
+        div(class="container")
+            div(class="row")
+                div(class="col-md-4")
+                    div(class="foooter--logo") KodeMate
+                    div(class="footer--text") Become a skillful programmer.
+                div(class="col-md-4")
+                    ul(class="footer--menu")
+                        li(class="footer--menu__heading") Courses
+                        li(class="footer--menu__item") Browse courses
+                        li(class="footer--menu__item") Request a course
+                        li(class="footer--menu__item") Check course status
+
+                    ul(class="footer--menu")
+                        li(class="footer--menu__heading") General
+                        li(class="footer--menu__item") About us
+                        li(class="footer--menu__item") Terms &amp; conditions
+                        li(class="footer--menu__item") Privacy policy
+                div(class="col-md-4")
+                    ul(class="footer--social")
+                        li(class="footer--social__heading") Contact
+                        li(class="footer--social__item"): i(class="fa fa-facebook")
+                        li(class="footer--social__item"): i(class="fa fa-twitter")
+                        li(class="footer--social__item"): i(class="fa fa-envelope")
+
+            div(class="row")
+                p(class="copy") created by kodemate @ 2016.

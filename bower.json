@@ -1,0 +1,32 @@
+{
+  "name": "homepage-frontend",
+  "description": "The frontend development for homepage, http://kodemate.com",
+  "main": "index.js",
+  "authors": [
+    "Pete Houston <contact@petehouston.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "kodemate",
+    "webpack",
+    "frontend",
+    "html",
+    "css",
+    "web"
+  ],
+  "homepage": "https://github.com/kodemate/homepage-frontend",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.0.0",
+    "font-awesome": "^4.6.3",
+    "bootstrap": "^3.3.6"
+  }
+}

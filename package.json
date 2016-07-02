@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "webpack-dev-server --content-base=static --hot --watch --progress"
+    "serve": "./node_modules/.bin/browser-sync start --config bs-config.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,14 @@
     "url": "https://github.com/kodemate/homepage-frontend/issues"
   },
   "devDependencies": {
+    "bootstrap-sass": "^3.3.6",
+    "browser-sync": "^2.13.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1"
   }
