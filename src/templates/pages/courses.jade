@@ -1,0 +1,49 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - Course Listing
+
+block prepend css
+    link(rel="stylesheet", href="css/courses.css")
+
+block content
+    include ../components/meta.jade
+    include ../components/navbar.jade
+
+    header
+        div(class="container")
+            h1 Course List
+            p Following are the available courses on Kodemate.
+
+    section(id="block-courses")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(class="img-responsive", src="http://placehold.it/400x250")
+                        div(class="courses--card_title")
+                            h4 Course name
+                        div(class="courses--card_actions")
+                            a(class="btn btn-outline btn-outline-primary", href="#") Chi Tiet
+                            a(class="btn btn-outline btn-outline-primary", href="#") Dang ki
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(class="img-responsive", src="http://placehold.it/400x250")
+                        div(class="courses--card_title")
+                            h4 Course name
+                        div(class="courses--card_actions")
+                            a(class="btn btn-outline btn-outline-primary", href="#") Chi Tiet
+                            a(class="btn btn-outline btn-outline-primary", href="#") Dang ki
+                div(class="col-md-4")
+                    div(class="courses--card")
+                        div(class="courses--card__image")
+                            img(class="img-responsive", src="http://placehold.it/400x250")
+                        div(class="courses--card_title")
+                            h4 Course name
+                        div(class="courses--card_actions")
+                            a(class="btn btn-outline btn-outline-primary", href="#") Chi Tiet
+                            a(class="btn btn-outline btn-outline-primary", href="#") Dang ki
+
+    include ../components/footer.jade

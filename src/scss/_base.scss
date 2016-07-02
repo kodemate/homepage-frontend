@@ -1,3 +1,25 @@
-@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese';
 
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$brand-primary:         #2c3e50 !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
+
+@import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables';
+@import './common';
+@import './components/button';
+@import './components/meta';
+@import './components/navbar';
+@import './components/footer';
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';

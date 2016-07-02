@@ -1,0 +1,59 @@
+footer {
+    background-color: $brand-primary;
+    color: #fff;
+    font-size: 12px;
+
+    a {
+        color: darken(#fff, 20%);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .footer--logo {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .footer--text {
+        font-style: italic;
+    }
+
+    .footer--menu {
+        margin-bottom: 50px;
+        list-style-type: none;
+        padding-left: 0;
+
+        .footer--menu__heading {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer--menu__item {
+            line-height: 2.0;
+        }
+    }
+
+    .footer--social {
+        list-style-type: none;
+        padding-left: 0;
+
+        .footer--social__heading {
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .footer--social__item {
+            line-height: 2.0;
+        }
+    }
+
+    .row {
+        &:last-child {
+            text-align: center;
+        }
+    }
+}
