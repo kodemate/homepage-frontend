@@ -1,3 +1,7 @@
+.btn {
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
 .btn-outline {
     background-color: #fff !important;
     border-color: $gray;

@@ -6,6 +6,9 @@ footer {
   padding-top: 50px;
   padding-bottom: 50px; }
 
+.btn {
+  transition: background-color 0.25s ease, color 0.25s ease; }
+
 .btn-outline {
   background-color: #fff !important;
   border-color: #555555; }
@@ -103,6 +106,9 @@ footer {
 
 .navbar-brand {
   padding-left: 0 !important; }
+
+.navbar-default {
+  border: none !important; }
 
 footer {
   background-color: #2c3e50;
@@ -4077,7 +4083,7 @@ tbody.collapse.in {
 
 .navbar-default {
   background-color: #2c3e50;
-  border-color: #202d3b; }
+  border-color: none; }
   .navbar-default .navbar-brand {
     color: #eaeaea; }
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
@@ -4104,7 +4110,7 @@ tbody.collapse.in {
       background-color: #888; }
   .navbar-default .navbar-collapse,
   .navbar-default .navbar-form {
-    border-color: #202d3b; }
+    border-color: none; }
   .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
     background-color: #384f66;
     color: #fff; }
@@ -5965,6 +5971,9 @@ h3 {
   h2 + p,
   h3 + p {
     text-align: center; }
+
+.navbar-default {
+  background-color: rgba(44, 62, 80, 0.4) !important; }
 
 #masthead {
   color: #fff;
