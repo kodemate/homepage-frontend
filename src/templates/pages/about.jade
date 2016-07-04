@@ -7,6 +7,63 @@ block prepend css
     link(rel="stylesheet", href="css/about.css")
 
 block content
+    include ../components/meta
+    include ../components/navbar
+
     header
-        h1 About us
+        div(class="container")
+            h1 About us
+            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex sunt eveniet sit minima, ratione autem.
+
+    section(id="block-tutors")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Who are we?
+
+            div(class="row")
+                div(class="col-md-12")
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque hic velit, perspiciatis magni repudiandae sunt quis suscipit nisi officiis officia? Rerum maxime dolorem repellendus ut vel necessitatibus voluptatem in id.
+
+    section(id="block-members")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Team members
+                    p Introducction about our team members
+
+            div(class="row")
+                div(class="col-md-6")
+                    div(class="member--card")
+                        div(class="row")
+                            div(class="col-md-5")
+                                div(class="member--card__image")
+                                    img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive img-circle", width="160")
+                            div(class="col-md-7")
+                                div(class="member--card__info")
+                                    div(class="member--card__name")
+                                        h4 Pete Houston
+                                    div(class="member--card__title")
+                                        span CEO, Founder
+                                    div(class="member--card__description")
+                                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ad, dolorum iure saepe minima in laboriosam, unde molestias, obcaecati quis autem voluptas molestiae consectetur veritatis possimus deserunt impedit eius amet.
+
+                div(class="col-md-6")
+                    div(class="member--card")
+                        div(class="row")
+                            div(class="col-md-5")
+                                div(class="member--card__image")
+                                    img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive img-circle", width="160")
+                            div(class="col-md-7")
+                                div(class="member--card__info")
+                                    div(class="member--card__name")
+                                        h4 Pete Houston
+                                    div(class="member--card__title")
+                                        span CEO, Founder
+                                    div(class="member--card__description")
+                                        p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ad, dolorum iure saepe minima in laboriosam, unde molestias, obcaecati quis autem voluptas molestiae consectetur veritatis possimus deserunt impedit eius amet.
+
+
+
+    include ../components/footer
 

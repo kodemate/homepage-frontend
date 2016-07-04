@@ -36,6 +36,11 @@ gulp.task('assets', function () {
         .pipe(gulp.dest('build/vendor'));
 });
 
+gulp.task('images', function () {
+    return gulp.src('src/images/**/*')
+        .pipe(gulp.dest('build/img'));
+});
+
 gulp.task('build', ['jade', 'sass', 'assets']);
 
 gulp.task('clean', function () {

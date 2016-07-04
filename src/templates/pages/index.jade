@@ -1,5 +1,7 @@
 extends ../layouts/master.jade
 
+
+
 block title
     title KodeMate - Index Page
 
@@ -16,7 +18,7 @@ block content
             div(class="container")
                 h1 Hello, world!
                 p Contents ...
-                p: a(class="btn btn-primary btn-lg") Learn more
+                p: a(class="btn btn-danger btn-lg") Learn more
 
     section(id="block-benefits")
         div(class="container")
@@ -48,45 +50,19 @@ block content
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque, suscipit eveniet!
 
             div(class="row")
+                include ../mixins/course_card
                 div(class="col-md-4")
-                    div(class="courses--card")
-                        div(class="courses--card__image")
-                            img(src="http://placehold.it/400x250", alt="", class="img-responsive")
-                        div(class="courses--card__title")
-                            h4 Getting started with PHP web development
-                        div(class="courses--card__summary")
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
-                        div(class="courses--card__actions")
-                            button(class="btn btn-danger") Details
-                            button(class="btn btn-danger") Register
+                    +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
                 div(class="col-md-4")
-                    div(class="courses--card")
-                        div(class="courses--card__image")
-                            img(src="http://placehold.it/400x250", alt="", class="img-responsive")
-                        div(class="courses--card__title")
-                            h4 Getting started with PHP web development
-                        div(class="courses--card__summary")
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
-                        div(class="courses--card__actions")
-                            button(class="btn btn-danger") Details
-                            button(class="btn btn-danger") Register
+                    +course_card('Lập trình web với PHP/Laravel', '1.800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web PHP một cách chuyên nghiệp', 'course.html')
                 div(class="col-md-4")
-                    div(class="courses--card")
-                        div(class="courses--card__image")
-                            img(src="http://placehold.it/400x250", alt="", class="img-responsive")
-                        div(class="courses--card__title")
-                            h4 Getting started with PHP web development
-                        div(class="courses--card__summary")
-                            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique impedit ducimus praesentium illo reprehenderit, quibusdam saepe.
-                        div(class="courses--card__actions")
-                            button(class="btn btn-danger") Details
-                            button(class="btn btn-danger") Register
+                    +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
 
-            div(class="row")
-                div(class="col-md-6")
-                    p you can also request a course of your interests
-                div(class="col-md-6")
-                    button(class="btn btn-danger") Request a course
+
+            div(class="row courses--request")
+                div(class="col-md-12")
+                    p(class="text-center")
+                        a(href="#") Xem tất cả các khoá học
 
     //- section(id="block-tutors")
     //-     div(class="container")
