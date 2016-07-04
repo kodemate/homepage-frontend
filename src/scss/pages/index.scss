@@ -27,6 +27,41 @@ h3 {
         background: transparent !important;
 
         text-align: center;
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        .description {
+
+            margin-bottom: 50px;
+        }
+
+        .actions {
+
+            a {
+                font-size: 12px;
+                font-weight: 600;
+                text-transform: uppercase;
+                margin-right: 50px;
+                color: #eee;
+
+                &.btn-link {
+                    border: solid 1px #fff !important;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                &:hover {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                border-radius: 500px;
+            }
+        }
     }
 }
 

@@ -10,8 +10,11 @@ footer {
   transition: background-color 0.25s ease, color 0.25s ease; }
 
 .btn-outline {
-  background-color: #fff !important;
+  background-color: transparent !important;
   border-color: #555555; }
+
+.btn-outline-inverse {
+  border-color: #fff !important; }
 
 .btn-outline-primary {
   border-color: #2c3e50 !important;
@@ -5985,6 +5988,24 @@ h3 {
     min-height: 500px;
     background: transparent !important;
     text-align: center; }
+    #masthead .jumbotron .title {
+      margin-bottom: 30px; }
+    #masthead .jumbotron .description {
+      margin-bottom: 50px; }
+    #masthead .jumbotron .actions a {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-right: 50px;
+      color: #eee;
+      border-radius: 500px; }
+      #masthead .jumbotron .actions a.btn-link {
+        border: solid 1px #fff !important; }
+      #masthead .jumbotron .actions a:last-child {
+        margin-right: 0; }
+      #masthead .jumbotron .actions a:hover {
+        text-decoration: none;
+        color: #fff; }
 
 #block-benefits .row {
   margin-bottom: 50px; }

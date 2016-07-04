@@ -3,8 +3,12 @@
 }
 
 .btn-outline {
-    background-color: #fff !important;
+    background-color: transparent !important;
     border-color: $gray;
+}
+
+.btn-outline-inverse {
+    border-color: #fff !important;
 }
 
 .btn-outline-primary {
