@@ -15,8 +15,29 @@ block content
             h1 Course List
             p Following are the available courses on Kodemate.
 
-    section(id="block-courses")
+    section(id="block-available")
         div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Các khoá học đang diễn ra
+                    p Các bạn có thể đăng kí ngay để tham gia các khoá học này.
+
+            div(class="row")
+                include ../mixins/course_card
+                div(class="col-md-4")
+                    +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
+                div(class="col-md-4")
+                    +course_card('Lập trình web với PHP/Laravel', '1.800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web PHP một cách chuyên nghiệp', 'course.html')
+                div(class="col-md-4")
+                    +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
+
+    section(id="block-coming-soon")
+        div(class="container")
+            div(class="row")
+                div(class="col-md-12")
+                    h2 Các khoá học sẽ được tổ chức
+                    p Các bạn có thể đăng kí để mỏ khoá học
+
             div(class="row")
                 include ../mixins/course_card
                 div(class="col-md-4")

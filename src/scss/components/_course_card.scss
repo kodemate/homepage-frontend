@@ -1,0 +1,73 @@
+.course--card {
+
+    border: solid 1px #eaeaea;
+    padding: 15px;
+
+    .course--card__price {
+
+        span {
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        .text {
+            margin-right: 10px;
+        }
+
+        .price {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            background-color: $brand-danger;
+            color: #fff;
+            border-radius: 500px;
+        }
+    }
+
+    .course--card__title {
+
+        h4 {
+
+        }
+    }
+
+    .course--card__date {
+
+        .text {
+            margin-right: 10px;
+        }
+
+        .date {
+            font-weight: 600;
+        }
+    }
+
+    .course--card__image {
+        margin-top: 20px;
+        margin-bottom: 25px;
+
+        img {
+        }
+    }
+
+    .course--card__summary {
+        margin-bottom: 25px;
+        p {
+
+        }
+    }
+
+    .course--card__actions {
+
+        a {
+            width: 50%;
+            border: none;
+            text-transform: uppercase;
+
+            &.btn {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

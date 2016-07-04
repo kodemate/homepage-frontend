@@ -1,16 +1,17 @@
 mixin course_card(title, price, date, image_url, summary, url)
-    .courses--card
-        .courses--card__price
-            span.text Giá
+    .course--card
+        .course--card__price
+            span.text Giá:
             span.price #{price}
-        .courses--card__title
+        .course--card__title
             h4 #{title}
-        .courses--card__date
-            span.date Ngày khai giảng: #{date}
-        .courses--card__image
+        .course--card__date
+            span.text Ngày khai giảng:
+            span.date #{date}
+        .course--card__image
             img(src="#{image_url}", alt="", class="img-responsive")
-        .courses--card__summary
+        .course--card__summary
             p #{summary}
-        .courses--card__actions
-            a(class="btn btn-danger", href=url) Chi tiết
+        .course--card__actions
+            a(class="btn btn-info", href=url) Chi tiết
             a(class="btn btn-danger", href=url) Đăng kí
