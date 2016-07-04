@@ -11,61 +11,61 @@ block prepend css
 block content
     include ../components/meta.jade
 
-    section(id="masthead")
+    section#masthead
         include ../components/navbar.jade
 
-        div(class="jumbotron")
-            div(class="container")
+        .jumbotron
+            .container
                 h1 Hello, world!
                 p Contents ...
                 p: a(class="btn btn-danger btn-lg") Learn more
 
-    section(id="block-benefits")
-        div(class="container")
-            div(class="row")
-                div(class="col-md-12")
+    section#block-benefits
+        .container
+            .row
+                .col-md-12
                     h2 Benefits of KodeMate
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. A sunt tenetur unde.
 
-            div(class="row")
-                div(class="col-md-4")
-                    div(class="benefits--icon"): i(class="fa fa-facebook")
-                    div(class="benefits-text")
+            .row
+                .col-md-4
+                    .benefits--icon: i(class="fa fa-facebook")
+                    .benefits-text
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
-                div(class="col-md-4")
-                    div(class="benefits--icon"): i(class="fa fa-facebook")
-                    div(class="benefits-text")
+                .col-md-4
+                    .benefits--icon: i(class="fa fa-facebook")
+                    .benefits-text
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
-                div(class="col-md-4")
-                    div(class="benefits--icon"): i(class="fa fa-facebook")
-                    div(class="benefits-text")
+                .col-md-4
+                    .benefits--icon: i(class="fa fa-facebook")
+                    .benefits-text
                         p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis commodi molestias, qui voluptate id excepturi. Laborum.
 
 
-    section(id="block-courses")
-        div(class="container")
-            div(class="row")
-                div(class="col-md-12")
+    section#block-courses
+        .container
+            .row
+                .col-md-12
                     h2 Course List
                     p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque, suscipit eveniet!
 
-            div(class="row")
+            .row
                 include ../mixins/course_card
-                div(class="col-md-4")
+                .col-md-4
                     +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
-                div(class="col-md-4")
+                .col-md-4
                     +course_card('Lập trình web với PHP/Laravel', '1.800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web PHP một cách chuyên nghiệp', 'course.html')
-                div(class="col-md-4")
+                .col-md-4
                     +course_card('Nhập môn lập trình web với HTML/CSS', '800,000 VND', '15/08/2016', 'http://placehold.it/400x250', 'Học lập trình web một cách chuyên nghiệp', 'course.html')
 
 
-            div(class="row courses--request")
-                div(class="col-md-12")
-                    p(class="text-center")
+            .row.courses--request
+                .col-md-12
+                    p.text-center
                         a(href="#") Xem tất cả các khoá học
 
     //- section(id="block-tutors")
-    //-     div(class="container")
+    //-     .container
     //-         div(class="row")
     //-             div(class="col-md-12")
     //-                 h2 About tutors
@@ -76,10 +76,10 @@ block content
     //-             div(class="col-md-6")
     //-                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias beatae quaerat aspernatur ad reiciendis placeat, sit nisi repellat accusamus culpa ratione dolorem dolor autem error repudiandae nam, quidem, architecto libero.
 
-    section(id="block-cta")
-        div(class="container")
-            div(class="row")
-                div(class="col-md-12")
+    section#block-cta
+        .container
+            .row
+                .col-md-12
                     h2 So do you really want to level up your coding skills and become a good programmer?
                     button(class="btn btn-danger") Register now
 
