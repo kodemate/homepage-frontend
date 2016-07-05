@@ -6,7 +6,13 @@ block title
     title KodeMate - Index Page
 
 block prepend css
+    link(rel="stylesheet", href="vendor/slick-carousel/slick/slick.css")
+    link(rel="stylesheet", href="vendor/slick-carousel/slick/slick-theme.css")
     link(rel="stylesheet", href="css/index.css")
+
+block append js
+    script(src="vendor/slick-carousel/slick/slick.js")
+    script(src="js/index.js")
 
 block content
     include ../components/meta.jade
@@ -21,6 +27,27 @@ block content
                 .actions
                     a(class="btn btn-outline btn-outline-inverse btn-lg") Tìm hiểu thêm
                     a(class="btn btn-danger btn-lg") Xem danh sách khoá học
+
+    section#block-problems
+        .container
+            .row
+                .col-md-6
+                    h2 Có những điều lo lắng
+                    img(src="img/need-a-job.png", alt="", class="problem")
+
+                .col-md-6
+                    p Đã vất vả đi học đại học mấy năm liền, dù bạn là sinh viên khoa Công Nghệ Thông Tin, Khoa Học Máy Tính, Toán Tin, Điện Tử Viễn Thông... hay khoa nào đi chăng nữa, khi tốt nghiệp ra trường là lúc bạn sẽ phải đối mặt với cuộc sống, và hơn hết, với những ai mong muốn trở thành lập trình viên, thì đều phải đối mặt với những khó khăn này:
+                    ul
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] Bạn không có ai định hướng cho bạn khi còn đang học ở trường?
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] Bạn chẳng biết nên bắt đầu học lập trình như thế nào?
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] Bạn không biết nên làm gì cho đồ án tốt nghiệp?
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] Tốt nghiệp xong, không xin được việc !!!
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] Đi xin việc mà nhà tuyển dụng hay hỏi kinh nghiệm, mà bạn thì lại không có?
+                        li: #[img(src="img/icon-face-sad.png", alt="", class="problem-sm")] ... (và còn nhiều nữa)
+                    p.focus Vậy phải làm gì để xoá bỏ những điều lo lắng đó?
+                    p.cta Bạn hoàn toàn có thể làm chủ được khả năng của bạn, và để làm được điều đó, #[span.highlight hãy tham gia huấn luyện lập trình tại KodeMate] để thay đổi mọi thứ.
+
+
 
     section#block-benefits
         .container
@@ -44,7 +71,7 @@ block content
                             p Không phải là chỉ học lý thuyết và làm các bài tập thực hành nhỏ, ở đây, các bạn sẽ được huấn luyện để áp dụng vào những dự án làm sản phẩm thực tế.
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-star")
+                        .benefits--icon: i(class="fa fa-user-secret")
                         .benefits--title Học hỏi từ kinh nghiệm
                         .benefits--text
                             p Điều lý thú hơn tại KodeMate là các bạn sẽ được học lập trình từ các chuyên gia có kinh nghiệm đã từng làm trong các tập đoàn, công ty lớn.
@@ -94,6 +121,27 @@ block content
                 .col-md-12
                     p.text-center
                         a(class="btn btn-outline btn-outline-primary", href="#") Xem tất cả các khoá học
+
+    section#block-testimonials
+        .container
+            .row
+                .col-md-12
+                    h2 Chia sẻ của các bạn đã học tại KodeMate
+            .row
+                .col-md-12
+                    .slider
+                            .slide
+                                img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive img-circle")
+                                h4.name Pete Houston 1
+                                p.text  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eum asperiores fuga tenetur provident, sunt voluptatum voluptatibus eaque!"
+                            .slide
+                                img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive img-circle")
+                                h4.name Pete Houston 2
+                                p.text  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eum asperiores fuga tenetur provident, sunt voluptatum voluptatibus eaque!"
+                            .slide
+                                img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive img-circle")
+                                h4.name Pete Houston 3
+                                p.text  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum eum asperiores fuga tenetur provident, sunt voluptatum voluptatibus eaque!"
 
     section#block-subscription
         .container

@@ -6052,6 +6052,33 @@ h2 + p {
         text-decoration: none;
         color: #fff; }
 
+#block-problems {
+  background-color: #fbfbfb; }
+  #block-problems .row .col-md-6 img.problem {
+    display: block;
+    margin: 50px auto;
+    width: 360px; }
+  #block-problems .row .col-md-6:last-child p {
+    line-height: 2.0; }
+    #block-problems .row .col-md-6:last-child p.focus {
+      display: inline-block;
+      font-weight: 600;
+      padding-bottom: 5px;
+      border-bottom: solid 1px #2c3e50; }
+    #block-problems .row .col-md-6:last-child p.cta span.highlight {
+      font-weight: 600;
+      color: #d9534f; }
+  #block-problems .row .col-md-6:last-child ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px; }
+    #block-problems .row .col-md-6:last-child ul li {
+      height: 50px;
+      margin-left: 25px; }
+      #block-problems .row .col-md-6:last-child ul li img.problem-sm {
+        width: 16px;
+        margin-right: 7px; }
+
 #block-benefits .row {
   margin-bottom: 50px; }
 
@@ -6059,7 +6086,8 @@ h2 + p {
   font-size: 400%;
   display: block;
   text-align: center;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  color: #d9534f; }
 
 #block-benefits .benefits {
   text-align: center; }
@@ -6093,6 +6121,29 @@ h2 + p {
     color: #fff; }
     #block-courses .courses--request a.btn {
       padding: 10px 15px; }
+
+#block-testimonials .slider {
+  margin-top: 50px; }
+  #block-testimonials .slider .slide {
+    text-align: center; }
+    #block-testimonials .slider .slide img {
+      width: 160px;
+      margin: 0 auto;
+      border: solid 1px #2c3e50;
+      padding: 5px; }
+    #block-testimonials .slider .slide h4.name {
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 25px; }
+    #block-testimonials .slider .slide p.text {
+      font-size: 12px;
+      font-style: italic; }
+  #block-testimonials .slider .slick-prev:before,
+  #block-testimonials .slider .slick-next:before {
+    color: #2c3e50 !important;
+    font-size: 48px; }
 
 #block-subscription {
   background-color: #d9534f;
