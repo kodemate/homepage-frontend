@@ -58,6 +58,27 @@ footer {
 
         .footer--social__item {
             line-height: 2.0;
+            display: inline-block;
+            margin-right: 30px;
+
+            i.fa + i.fa {
+                color: $brand-primary;
+            }
+            a:hover {
+                i.fa {
+                    transition: color 0.25s ease;
+                }
+            }
+            span.fa-stack {
+                &:hover {
+                    i.fa-stack-2x {
+                        color: $brand-danger;
+                    }
+                    i.fa-stack-1x {
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 

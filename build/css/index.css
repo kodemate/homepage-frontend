@@ -40,6 +40,9 @@ footer {
   border-color: #d9534f !important;
   color: #d9534f !important; }
 
+.btn-circle {
+  border-radius: 500px !important; }
+
 .course--card {
   border: solid 1px #eaeaea;
   padding: 15px;
@@ -164,7 +167,17 @@ footer {
       margin-bottom: 15px;
       font-weight: 600; }
     footer .footer--social .footer--social__item {
-      line-height: 2.0; }
+      line-height: 2.0;
+      display: inline-block;
+      margin-right: 30px; }
+      footer .footer--social .footer--social__item i.fa + i.fa {
+        color: #2c3e50; }
+      footer .footer--social .footer--social__item a:hover i.fa {
+        transition: color 0.25s ease; }
+      footer .footer--social .footer--social__item span.fa-stack:hover i.fa-stack-2x {
+        color: #d9534f; }
+      footer .footer--social .footer--social__item span.fa-stack:hover i.fa-stack-1x {
+        color: #fff; }
   footer .row:last-child {
     margin-top: 30px;
     text-align: center; }
@@ -6062,6 +6075,8 @@ h2 + p {
 
 #block-benefits .more a {
   margin-top: 15px; }
+  #block-benefits .more a.btn {
+    padding: 10px 15px; }
 
 #block-courses {
   background-color: #fbfbfb; }
@@ -6074,23 +6089,42 @@ h2 + p {
       margin-bottom: 0; }
       #block-courses .row:last-child .col-md-6:first-child {
         text-align: right; }
-  #block-courses .courses--request .col-md-6 {
-    color: #fff;
-    background-color: #384f66; }
-
-#block-tutors .col-md-12 {
-  text-align: center;
-  margin-bottom: 45px; }
-
-#block-tutors img {
-  margin: 0 auto; }
+  #block-courses .courses--request {
+    color: #fff; }
+    #block-courses .courses--request a.btn {
+      padding: 10px 15px; }
 
 #block-subscription {
   background-color: #d9534f;
   color: #fff;
   text-align: center; }
-  #block-subscription input {
+  #block-subscription .input-group {
     width: 50%;
-    margin: 25px auto; }
+    margin: 35px auto; }
+    #block-subscription .input-group .input-group-addon {
+      padding: 0;
+      padding-left: 10px;
+      background-color: transparent;
+      border: none;
+      border-bottom: solid 1px #fff;
+      color: #fff; }
+    #block-subscription .input-group input {
+      border-top: transparent;
+      border-left: transparent;
+      border-right: transparent;
+      border-bottom: solid 1px #fff;
+      background-color: transparent !important;
+      color: #fff;
+      box-shadow: none;
+      text-align: center;
+      font-size: 18px;
+      width: calc(100% - 24px); }
+  #block-subscription button.btn {
+    padding: 10px 15px;
+    border: solid 1px #fff;
+    background-color: transparent; }
+    #block-subscription button.btn:hover {
+      background-color: #fff;
+      color: #d9534f; }
 
 /*# sourceMappingURL=index.css.map */

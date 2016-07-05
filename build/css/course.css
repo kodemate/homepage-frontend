@@ -40,6 +40,9 @@ footer {
   border-color: #d9534f !important;
   color: #d9534f !important; }
 
+.btn-circle {
+  border-radius: 500px !important; }
+
 .course--card {
   border: solid 1px #eaeaea;
   padding: 15px;
@@ -164,7 +167,17 @@ footer {
       margin-bottom: 15px;
       font-weight: 600; }
     footer .footer--social .footer--social__item {
-      line-height: 2.0; }
+      line-height: 2.0;
+      display: inline-block;
+      margin-right: 30px; }
+      footer .footer--social .footer--social__item i.fa + i.fa {
+        color: #2c3e50; }
+      footer .footer--social .footer--social__item a:hover i.fa {
+        transition: color 0.25s ease; }
+      footer .footer--social .footer--social__item span.fa-stack:hover i.fa-stack-2x {
+        color: #d9534f; }
+      footer .footer--social .footer--social__item span.fa-stack:hover i.fa-stack-1x {
+        color: #fff; }
   footer .row:last-child {
     margin-top: 30px;
     text-align: center; }

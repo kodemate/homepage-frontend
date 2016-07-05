@@ -116,6 +116,10 @@ h2 + p {
     .more {
         a {
             margin-top: 15px;
+
+            &.btn {
+                padding: 10px 15px;
+            }
         }
     }
 }
@@ -137,32 +141,55 @@ h2 + p {
         }
     }
 
-    .courses--request .col-md-6 {
+    .courses--request {
         color: #fff;
 
-        background-color: #384f66;
-
+        a.btn {
+            padding: 10px 15px;
+        }
     }
 }
 
-#block-tutors {
-    .col-md-12 {
-        text-align: center;
-        margin-bottom: 45px;
-    }
-
-    img {
-        margin: 0 auto;
-    }
-}
 
 #block-subscription {
     background-color: $brand-danger;
     color: #fff;
     text-align: center;
 
-    input {
+    .input-group {
         width: 50%;
-        margin: 25px auto;
+        margin: 35px auto;
+        .input-group-addon {
+            padding: 0;
+            padding-left: 10px;
+            background-color: transparent;
+            border: none;
+            border-bottom: solid 1px #fff;
+            color: #fff;
+        }
+
+        input {
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: solid 1px #fff;
+            background-color: transparent !important;
+            color: #fff;
+            box-shadow: none;
+            text-align: center;
+            font-size: 18px;
+            width: calc(100% - 24px);
+        }
+    }
+
+    button.btn {
+        padding: 10px 15px;
+        border: solid 1px #fff;
+        background-color: transparent;
+
+        &:hover {
+            background-color: #fff;
+            color: $brand-danger;
+        }
     }
 }

@@ -32,46 +32,45 @@ block content
             .row
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-file-text-o")
                         .benefits--title Huấn luyện bài bản
                         .benefits--text
                             p Các bạn sẽ được đào tạo một cách bài bản có khoa học và đặc biệt, các bạn sẽ được hướng dẫn về lộ trình hướng tới lĩnh vực mà bạn mong muốn đạt được.
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-puzzle-piece")
                         .benefits--title Áp dụng thực tế
                         .benefits--text
                             p Không phải là chỉ học lý thuyết và làm các bài tập thực hành nhỏ, ở đây, các bạn sẽ được huấn luyện để áp dụng vào những dự án làm sản phẩm thực tế.
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-star")
                         .benefits--title Học hỏi từ kinh nghiệm
                         .benefits--text
                             p Điều lý thú hơn tại KodeMate là các bạn sẽ được học lập trình từ các chuyên gia có kinh nghiệm đã từng làm trong các tập đoàn, công ty lớn.
             .row
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-thumbs-up")
                         .benefits--title Tạo ra sản phẩm thực
                         .benefits--text
                             p Kết thúc mỗi khoá học, các bạn đều có cơ hội để cùng các giảng viên để tạo ra sản phẩm riêng được viết bởi chính những dòng code mà bạn viết và chia sẻ ra thế giới.
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-flash")
                         .benefits--title Tiếp cận công nghệ mới
                         .benefits--text
                             p Tại KodeMate, các bạn sẽ luôn được đào tạo với chương trình áp dụng những nền tảng công nghệ hiện đại và mới nhất mà được các công ty sử dụng.
                 .col-md-4
                     .benefits
-                        .benefits--icon: i(class="fa fa-facebook")
+                        .benefits--icon: i(class="fa fa-money")
                         .benefits--title Cơ hội về nghề nghiệp
                         .benefits--text
                             p Các bạn băn khoăn tốt nghiệp xong thì liệu có xin được việc làm? Với việc được đào tạo tại KodeMate, các bạn sẽ có được cơ hội săn đón bởi các nhà tuyển dụng.
 
             .row.more
                 .col-md-12.text-center
-                    p Bạn có thể tham khảo rõ hơn về
-                    a(class="btn btn-outline btn-outline-primary", href="benefits.html") lợi ích khi học tại KodeMate
+                    a(class="btn btn-outline btn-outline-primary", href="benefits.html") Tìm hiểu lợi ích khi học tại KodeMate
 
 
     section#block-courses
@@ -100,9 +99,11 @@ block content
         .container
             .row
                 .col-md-12
-                    h4 Bạn muốn đăng kí nhận bản tin từ KodeMate về các khóa học mới
+                    h4 Bạn muốn đăng kí nhận bản tin qua email từ KodeMate về các khóa học mới
                     .form-group
-                        input.form-control(type="text")
-                        button(class="btn btn-info js-btn-subscribe") Register now
+                        .input-group
+                            span.input-group-addon: i.fa.fa-envelope
+                            input.form-control(type="text")
+                        button(class="btn btn-info  js-btn-subscribe") Đăng kí nhận tin
 
     include ../components/footer.jade
