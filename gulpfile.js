@@ -36,12 +36,17 @@ gulp.task('assets', function () {
         .pipe(gulp.dest('build/vendor'));
 });
 
+gulp.task('scripts', function () {
+    return gulp.src('src/scripts/**/*.js')
+        .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('images', function () {
     return gulp.src('src/images/**/*')
         .pipe(gulp.dest('build/img'));
 });
 
-gulp.task('build', ['jade', 'sass', 'assets']);
+gulp.task('build', ['jade', 'sass', 'scripts', 'images', 'assets']);
 
 gulp.task('clean', function () {
     return del([

@@ -27,6 +27,7 @@
   "dependencies": {
     "jquery": "^3.0.0",
     "font-awesome": "^4.6.3",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+    "slick-carousel": "^1.6.0"
   }
 }
