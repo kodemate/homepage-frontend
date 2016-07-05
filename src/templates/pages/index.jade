@@ -48,7 +48,6 @@ block content
                         .benefits--title Học hỏi từ kinh nghiệm
                         .benefits--text
                             p Điều lý thú hơn tại KodeMate là các bạn sẽ được học lập trình từ các chuyên gia có kinh nghiệm đã từng làm trong các tập đoàn, công ty lớn.
-
             .row
                 .col-md-4
                     .benefits
@@ -69,13 +68,18 @@ block content
                         .benefits--text
                             p Các bạn băn khoăn tốt nghiệp xong thì liệu có xin được việc làm? Với việc được đào tạo tại KodeMate, các bạn sẽ có được cơ hội săn đón bởi các nhà tuyển dụng.
 
+            .row.more
+                .col-md-12.text-center
+                    p Bạn có thể tham khảo rõ hơn về
+                    a(class="btn btn-outline btn-outline-primary", href="benefits.html") lợi ích khi học tại KodeMate
+
 
     section#block-courses
         .container
             .row
                 .col-md-12
-                    h2 Course List
-                    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia atque, suscipit eveniet!
+                    h2 Danh sách các khoá học
+                    p Có khá nhiều khoá học cho bạn chọn lựa theo nền tảng công nghệ bạn muốn định hướng.
 
             .row
                 include ../mixins/course_card
@@ -90,25 +94,15 @@ block content
             .row.courses--request
                 .col-md-12
                     p.text-center
-                        a(href="#") Xem tất cả các khoá học
+                        a(class="btn btn-outline btn-outline-primary", href="#") Xem tất cả các khoá học
 
-    //- section(id="block-tutors")
-    //-     .container
-    //-         div(class="row")
-    //-             div(class="col-md-12")
-    //-                 h2 About tutors
-    //-                 p A bit information about tutors that will train you in technical courses.
-    //-         div(class="row")
-    //-             div(class="col-md-6")
-    //-                 img(src="http://petehouston.com/assets/img/avatar.png", alt="", class="img-responsive", width="256")
-    //-             div(class="col-md-6")
-    //-                 p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias beatae quaerat aspernatur ad reiciendis placeat, sit nisi repellat accusamus culpa ratione dolorem dolor autem error repudiandae nam, quidem, architecto libero.
-
-    section#block-cta
+    section#block-subscription
         .container
             .row
                 .col-md-12
-                    h2 So do you really want to level up your coding skills and become a good programmer?
-                    button(class="btn btn-danger") Register now
+                    h4 Bạn muốn đăng kí nhận bản tin từ KodeMate về các khóa học mới
+                    .form-group
+                        input.form-control(type="text")
+                        button(class="btn btn-info js-btn-subscribe") Register now
 
     include ../components/footer.jade

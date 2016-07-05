@@ -2,6 +2,7 @@
 
     border: solid 1px #eaeaea;
     padding: 15px;
+    border-radius: 5px;
 
     .course--card__price {
 
@@ -64,6 +65,8 @@
             width: 50%;
             border: none;
             text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
 
             &.btn {
                 padding: 10px 15px;

@@ -112,6 +112,12 @@ h2 + p {
             line-height: 1.65;
         }
     }
+
+    .more {
+        a {
+            margin-top: 15px;
+        }
+    }
 }
 
 #block-courses {
@@ -150,10 +156,13 @@ h2 + p {
     }
 }
 
-#block-cta {
-    button {
-        display: block;
-        margin: 0 auto;
-        margin-top: 35px;
+#block-subscription {
+    background-color: $brand-danger;
+    color: #fff;
+    text-align: center;
+
+    input {
+        width: 50%;
+        margin: 25px auto;
     }
 }

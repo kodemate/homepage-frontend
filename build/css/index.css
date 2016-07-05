@@ -42,7 +42,8 @@ footer {
 
 .course--card {
   border: solid 1px #eaeaea;
-  padding: 15px; }
+  padding: 15px;
+  border-radius: 5px; }
   .course--card .course--card__price span {
     height: 30px;
     line-height: 30px;
@@ -68,7 +69,9 @@ footer {
   .course--card .course--card__actions a {
     width: 50%;
     border: none;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px; }
     .course--card .course--card__actions a.btn {
       padding: 10px 15px; }
 
@@ -112,7 +115,11 @@ footer {
   margin-bottom: 0 !important; }
 
 .navbar-brand {
-  padding-left: 0 !important; }
+  padding-left: 0 !important;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.7px;
+  font-size: 16px !important; }
 
 .navbar-default {
   border: none !important; }
@@ -122,14 +129,23 @@ footer {
   color: #fff;
   font-size: 12px; }
   footer a {
-    color: #cccccc; }
+    color: #cccccc;
+    transition: color 0.25s ease; }
     footer a:hover {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #fff; }
   footer .footer--logo {
+    display: block;
     font-size: 14px;
-    margin-bottom: 20px; }
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 15px; }
   footer .footer--text {
-    font-style: italic; }
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.8; }
+  footer .footer--address {
+    line-height: 1.8; }
   footer .footer--menu {
     margin-bottom: 50px;
     list-style-type: none;
@@ -150,6 +166,7 @@ footer {
     footer .footer--social .footer--social__item {
       line-height: 2.0; }
   footer .row:last-child {
+    margin-top: 30px;
     text-align: center; }
 
 /*!
@@ -6043,6 +6060,9 @@ h2 + p {
   #block-benefits .benefits .benefits--text {
     line-height: 1.65; }
 
+#block-benefits .more a {
+  margin-top: 15px; }
+
 #block-courses {
   background-color: #fbfbfb; }
   #block-courses .row {
@@ -6065,9 +6085,12 @@ h2 + p {
 #block-tutors img {
   margin: 0 auto; }
 
-#block-cta button {
-  display: block;
-  margin: 0 auto;
-  margin-top: 35px; }
+#block-subscription {
+  background-color: #d9534f;
+  color: #fff;
+  text-align: center; }
+  #block-subscription input {
+    width: 50%;
+    margin: 25px auto; }
 
 /*# sourceMappingURL=index.css.map */
