@@ -10,17 +10,16 @@ block content
     include ../components/meta.jade
     include ../components/navbar.jade
 
-    header
-        .container
-            h1 Course List
-            p Following are the available courses on Kodemate.
+    include ../mixins/header
+    +header('Danh sách khoá học', 'Tổng hợp các khoá học được tổ chức tại KodeMate.')
+
 
     section#block-available
         .container
             .row
                 .col-md-12
                     h2 Các khoá học đang diễn ra
-                    p Các bạn có thể đăng kí ngay để tham gia các khoá học này.
+                    p Hàng tháng các khoá học mới sẽ được mở lớp và các bạn có thể đăng kí các khoá học này.
 
             .row
                 include ../mixins/course_card
@@ -36,7 +35,7 @@ block content
             .row
                 .col-md-12
                     h2 Các khoá học sẽ được tổ chức
-                    p Các bạn có thể đăng kí để mỏ khoá học
+                    p Đây là danh sách các khoá học dự kiến sẽ được tổ chức. Tuy nhiên, các bạn cũng có thể gửi yêu cầu tổ chức một khoá học dành cho nhóm của bạn.
 
             .row
                 include ../mixins/course_card

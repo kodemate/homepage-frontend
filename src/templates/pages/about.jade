@@ -10,10 +10,8 @@ block content
     include ../components/meta
     include ../components/navbar
 
-    header
-        .container
-            h1 About us
-            p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex sunt eveniet sit minima, ratione autem.
+    include ../mixins/header
+    +header('Giới thiệu', 'Đôi điều giới thiệu về KodeMate và các thành viên.')
 
     section#block-tutors
         .container

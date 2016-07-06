@@ -1,5 +1,9 @@
 .navbar {
     margin-bottom: 0 !important;
+
+    .container-fluid {
+        padding-right: 0;
+    }
 }
 
 .navbar-brand {
@@ -12,4 +16,8 @@
 
 .navbar-default {
     border: none !important;
+}
+
+.navbar-collapse {
+    padding-right: 0 !important;
 }

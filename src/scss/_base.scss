@@ -23,10 +23,10 @@ $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
 $brand-primary:         #2c3e50 !default;
-$brand-success:         #5cb85c !default;
-$brand-info:            #5bc0de !default;
-$brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-success:         #27ae60 !default;
+$brand-info:            #2980b9 !default;
+$brand-warning:         #f39c12 !default;
+$brand-danger:          #c0392b !default;
 
 $text-color:            $brand-primary !default;
 
@@ -99,7 +99,7 @@ $navbar-default-border:            none !default;
 // Navbar links
 $navbar-default-link-color:                #eaeaea !default;
 $navbar-default-link-hover-color:          #fff !default;
-$navbar-default-link-hover-bg:             #384f66 !default;
+$navbar-default-link-hover-bg:             $brand-danger !default;
 $navbar-default-link-active-color:         #fff !default;
 $navbar-default-link-active-bg:            #384f66 !default;
 $navbar-default-link-disabled-color:       #ccc !default;
@@ -121,5 +121,6 @@ $navbar-default-toggle-border-color:       #ddd !default;
 @import './components/course_card';
 @import './components/meta';
 @import './components/navbar';
+@import './components/header';
 @import './components/footer';
 @import 'node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
