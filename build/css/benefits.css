@@ -37,8 +37,13 @@ footer {
   color: #f39c12 !important; }
 
 .btn-outline-danger {
-  border-color: #c0392b !important;
-  color: #c0392b !important; }
+  background-color: #c0392b !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  transition: background-color 0.25s ease, color 0.25s ease; }
+  .btn-outline-danger:hover {
+    background-color: #fff !important;
+    color: #c0392b !important; }
 
 .btn-circle {
   border-radius: 500px !important; }
@@ -6007,5 +6012,24 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+#block-benefits {
+  background-color: #fbfbfb;
+  line-height: 2.0; }
+  #block-benefits .list-group .list-group-item {
+    padding: 25px; }
+    #block-benefits .list-group .list-group-item .list-group-item-heading {
+      margin-bottom: 20px;
+      text-transform: uppercase; }
+    #block-benefits .list-group .list-group-item .list-group-item-text {
+      line-height: 2.0; }
+
+#block-cta {
+  background-color: #c0392b;
+  color: #fff; }
+  #block-cta h3 {
+    margin-bottom: 35px; }
+  #block-cta .btn {
+    padding: 10px 15px; }
 
 /*# sourceMappingURL=benefits.css.map */
