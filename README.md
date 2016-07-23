@@ -60,16 +60,17 @@ Following pages to develop.
 * **About** (`about.html`)
 * **Contact** (`contact.html`)
 * **Request a course** (`request-a-course.html`)
-
+* **Benefits** (`benefits.html`)
+* **FAQs** (`faqs.html`)
 
 ## Task lists
 
 Tasks for development.
 
 - [X] Basic setup
-- [ ] Style basic for `index.html`
-- [ ] Add more pages to sites
+- [X] Style basic for `index.html`
+- [X] Add more pages to sites
 - [X] Port to SASS (required project re-structure)
 - [X] Port to Jade (required project re-structure)
 - [X] Create build script
-- [ ] Refactor project
+- [X] Refactor project
