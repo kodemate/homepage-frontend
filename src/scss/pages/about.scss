@@ -1,25 +1,12 @@
 @import '../base';
 
-#block-members {
+h2 {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: solid 1px $brand-danger;
+}
 
-    .member--card {
-        .member--card__image {
-
-        }
-
-        .member--card__info {
-
-            .member--card__name {
-
-            }
-
-            .member--card__title {
-
-            }
-
-            .member--card__description {
-
-            }
-        }
-    }
+p {
+    margin-top: 25px;
+    line-height: 2.0;
 }
