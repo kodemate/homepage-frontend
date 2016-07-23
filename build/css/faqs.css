@@ -51,7 +51,8 @@ footer {
 .course--card {
   border: solid 1px #eaeaea;
   padding: 15px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  background-color: #fff; }
   .course--card .course--card__price span {
     height: 30px;
     line-height: 30px;
@@ -6012,5 +6013,23 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+
+#block-faqs {
+  background-color: #fbfbfb; }
+  #block-faqs .list-group .list-group-item {
+    padding: 25px; }
+    #block-faqs .list-group .list-group-item .list-group-item-heading {
+      font-size: 120%;
+      margin-bottom: 15px; }
+    #block-faqs .list-group .list-group-item .list-group-item-text {
+      line-height: 2.0; }
+
+#block-cta {
+  background-color: #c0392b;
+  color: #fff; }
+  #block-cta h3 {
+    margin-bottom: 35px; }
+  #block-cta .btn {
+    padding: 10px 15px; }
 
 /*# sourceMappingURL=faqs.css.map */
