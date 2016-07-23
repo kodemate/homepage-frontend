@@ -213,6 +213,7 @@ h2 + p {
 
             img {
                 width: 160px;
+                height: 160px;
                 margin: 0 auto;
                 border: solid 1px $brand-primary;
                 padding: 5px;
@@ -227,8 +228,12 @@ h2 + p {
             }
 
             p.text {
-                font-size: 12px;
+                font-size: 14px;
                 font-style: italic;
+            }
+
+            i.title {
+                font-size: 12px;
             }
         }
 

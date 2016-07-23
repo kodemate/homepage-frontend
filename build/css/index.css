@@ -6142,6 +6142,7 @@ h2 + p {
     text-align: center; }
     #block-testimonials .slider .slide img {
       width: 160px;
+      height: 160px;
       margin: 0 auto;
       border: solid 1px #2c3e50;
       padding: 5px; }
@@ -6152,8 +6153,10 @@ h2 + p {
       margin-top: 20px;
       margin-bottom: 25px; }
     #block-testimonials .slider .slide p.text {
-      font-size: 12px;
+      font-size: 14px;
       font-style: italic; }
+    #block-testimonials .slider .slide i.title {
+      font-size: 12px; }
   #block-testimonials .slider .slick-prev:before,
   #block-testimonials .slider .slick-next:before {
     color: #2c3e50 !important;
