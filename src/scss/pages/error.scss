@@ -1,0 +1,28 @@
+@import '../base';
+
+#block-content {
+    min-height: 500px;
+    background-color: #f0f0f0;
+
+    .container {
+        padding: 35px;
+        background-color: #fff;
+    }
+
+    i.fa.fa-warning {
+        font-size: 144px;
+        margin: 35px auto;
+        color: $brand-warning;
+    }
+
+    a {
+        border-bottom: solid 1px;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            text-decoration: none;
+            color: $brand-danger;
+        }
+    }
+}

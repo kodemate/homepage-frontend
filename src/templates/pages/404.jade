@@ -1,0 +1,24 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - 404 Page
+
+block prepend css
+    link(rel="stylesheet", href="css/error.css")
+
+block content
+    include ../components/meta
+    include ../components/navbar
+
+
+    section#block-content
+        .container
+            .row.text-center
+                .col-md-6.col-md-offset-3
+                    h4 Trang này không tồn tại!
+                    p #[i.fa.fa-warning]
+                    p #[a(href="index.html") #[i.fa.fa-arrow-left] Quay trở lại trang chủ]
+
+
+    include ../components/footer
+

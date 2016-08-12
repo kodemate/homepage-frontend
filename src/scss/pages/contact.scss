@@ -1,0 +1,29 @@
+@import '../base';
+
+body {
+    background-color: #fff;
+}
+
+#block-contact {
+    background-color: #f0f0f0;
+
+    .container {
+        padding: 35px;
+        background-color: #fff;
+    }
+
+    a {
+        border-bottom: solid 1px;
+
+        transition: color 0.35s ease;
+
+        &:hover {
+            text-decoration: none;
+            color: $brand-danger;
+        }
+    }
+
+    p, li {
+        line-height: 2.0;
+    }
+}

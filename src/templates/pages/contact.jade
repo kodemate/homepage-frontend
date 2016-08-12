@@ -1,0 +1,43 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - One Course Page
+
+block prepend css
+    link(rel="stylesheet", href="css/contact.css")
+
+block content
+    include ../components/meta
+    include ../components/navbar
+
+    include ../mixins/header
+    +header('Liên hệ', 'Gửi thông tin liên lạc tới chúng tôi.')
+
+    section#block-contact
+        .container
+            .row
+                .col-md-6
+                    p Ngoài ra các bạn nếu câu hỏi, thắc mắc thì có thể tham khảo qua mục #[a(href="faqs.html") câu hỏi thường gặp].
+                    p Các bạn cũng có thể liên hệ với chúng tôi qua:
+                    ul
+                        li #[strong #[i.fa.fa-phone] 0906-284-977]
+                        li #[a(href="mailto:hello@kodemate.com") #[i.fa.fa-envelope] hello@kodemate.com]
+                        li #[a(href="#") #[i.fa.fa-facebook] facebook.com/kodemate]
+
+
+                .col-md-6
+                    form.form-horizontal
+                        .form-group
+                            .input-group
+                                .input-group-addon Tên bạn
+                                input.form-control(placeholder="Quyết Văn Tâm", required)
+                        .form-group
+                            .input-group
+                                .input-group-addon Địa chỉ email
+                                input.form-control(type="email", placeholder="address@mail.com", required)
+                        .form-group
+                            textarea.form-control(rows="10", placeholder="Nội dung bạn muốn gửi", required)
+                        .form-group
+                            button.form-control.btn.btn-primary Submit
+
+    include ../components/footer
