@@ -56,51 +56,76 @@ block content
 
                                 ul.lesson--list
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 1:
                                         span.title Gioi thieu ve lap trinh web và thiết lập môi trường.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 2:
                                         span.title Học sử dụng các thẻ HTML và sử dụng CSS để tạo hình cho web.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 3:
                                         span.title Cấu trúc khung của một trang web và cách phân chia bố cục.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 4:
                                         span.title Tìm hiểu và sử dụng Javascript để tương tác trên web.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 5:
                                         span.title Tạo một trang web cá nhân đơn giản.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 6:
                                         span.title Giói thiệu và sử dụng Bootstrap Framework.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 7:
                                         span.title Cách tạo web responsive trên nhiều màn hình.
                                     li
-                                        i.fa.fa-play
                                         span.counter Buoi 80:
                                         span.title Tạo một trang web về sách.
 
 
                 .col-md-3
-                    .card--price
-                        span 200,000 VND
-                    .card--info
-                        .meta: #[i.fa.fa-calendar] Khai giảng: 25/08/2016
-                        .meta: #[i.fa.fa-sun-o] Số buổi: 10
-                        .meta: #[i.fa.fa-clock-o] Thời lượng: 3h / buổi
-                        .buttons
-                            a(class="btn btn-danger", href="#") Đăng kí ngay
-                            a(class="btn btn-outline-danger", href="#") Liên hệ
-                    .card--addons
-                        .meta: #[i.fa.fa-question-circle-o] #[a(href="faqs.html") Câu hỏi thường gặp]
+                    .action-card(data-spy="affix", data-offset-top="330")
+                        .card--price
+                            span 200,000 #[small VND]
+                        .card--info
+                            .meta: #[i.fa.fa-calendar] Khai giảng: 25/08/2016
+                            .meta: #[i.fa.fa-sun-o] Số buổi: 10
+                            .meta: #[i.fa.fa-clock-o] Thời lượng: 3h / buổi
+                            .buttons
+                                a(class="btn btn-danger", href="#") #[i.fa.fa-hand-o-right] Đăng kí ngay
+                                a.btn.btn-outline(data-toggle="modal", href="#modal-contact") Liên hệ
+                        .card--addons
+                            .meta: #[i.fa.fa-question-circle-o] #[a(href="faqs.html") Câu hỏi thường gặp]
+
+
+
+    .modal.fade#modal-contact
+        .modal-dialog
+            .modal-content
+                .modal-header
+                    button.close(type="button", data-dismiss="modal", aria-hidden="true") &times;
+                    h4.modal-title Hỏi đáp về khoá học
+                .modal-body
+
+                    form
+                        .form-group
+                            .input-group
+                                span.input-group-addon Họ tên
+                                input.form-control(type="text", placeholder="Tên của bạn")
+                        .form-group
+                            .input-group
+                                span.input-group-addon Email
+                                input.form-control(type="text", placeholder="Email")
+                        .form-group
+                            .input-group
+                                span.input-group-addon Khoá học
+                                input.form-control(type="text", placeholder="Học lập trình PHP nhập môn", readonly)
+                        .form-group
+                            textarea.form-control(rows="10", cols="30", placeholder="Hãy cho chúng tôi biết câu hỏi hay băn khoăn của bạn về khoá học trước khi đăng kí...")
+                        .row
+                            .col-md-6.col-md-offset-3
+                                button.btn.btn-block.btn-primary(type="submit") Gửi câu hỏi
+
+                .modal-footer
+                    p Với các thắc mắc hay câu hỏi chung về học tại KodeMate, các bạn có thể tham khảo tại mục #[a(href="faqs.html") Câu hỏi thường gặp].
 
 
 

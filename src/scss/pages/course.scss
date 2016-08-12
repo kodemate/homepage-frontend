@@ -64,38 +64,63 @@ h4 {
         }
     }
 
-    .card--price {
-        // margin-top: 25px;
-        font-size: 32px;
-        background-color: $brand-success;
-        text-align: center;
-        color: #fff;
-        padding-top: 15px;
-        padding-bottom: 15px;
-
-    }
-
-    .card--info {
-        background-color: #fff;
-        border: solid 1px #eaeaea;
-        padding: 20px;
-
-        .meta {
-            margin-bottom: 15px;
+    .action-card {
+        &.affix {
+            top: 30px;
+            width: 260px;
         }
 
-        .buttons {
-            margin-top: 20px;
-            a.btn {
-                display: block;
-                text-transform: uppercase;
-                font-weight: 600;
-                padding: 10px 15px;
+        .card--price {
+            // margin-top: 25px;
+            font-size: 32px;
+            background-color: $brand-success;
+            text-align: center;
+            color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+        }
+
+        .card--info {
+            background-color: #fff;
+            border: solid 1px #eaeaea;
+            padding: 20px;
+
+            .meta {
+                margin-bottom: 15px;
+            }
+
+            .buttons {
+                margin-top: 20px;
+                a.btn {
+                    display: block;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 10px 15px;
+                }
             }
         }
+
+        .card--addons {
+            padding: 20px;
+        }
+    }
+}
+
+#modal-contact {
+    a {
+        border-bottom: solid 1px;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            text-decoration: none;
+
+            color: $brand-danger;
+        }
     }
 
-    .card--addons {
-        padding: 20px;
+    .modal-footer {
+        text-align: center;
     }
 }

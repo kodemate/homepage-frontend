@@ -6054,27 +6054,40 @@ h4 {
         margin-right: 20px;
         text-transform: uppercase;
         font-weight: 600; }
-  #block-course .card--price {
+  #block-course .action-card.affix {
+    top: 30px;
+    width: 260px; }
+  #block-course .action-card .card--price {
     font-size: 32px;
     background-color: #27ae60;
     text-align: center;
     color: #fff;
     padding-top: 15px;
     padding-bottom: 15px; }
-  #block-course .card--info {
+  #block-course .action-card .card--info {
     background-color: #fff;
     border: solid 1px #eaeaea;
     padding: 20px; }
-    #block-course .card--info .meta {
+    #block-course .action-card .card--info .meta {
       margin-bottom: 15px; }
-    #block-course .card--info .buttons {
+    #block-course .action-card .card--info .buttons {
       margin-top: 20px; }
-      #block-course .card--info .buttons a.btn {
+      #block-course .action-card .card--info .buttons a.btn {
         display: block;
         text-transform: uppercase;
         font-weight: 600;
         padding: 10px 15px; }
-  #block-course .card--addons {
+  #block-course .action-card .card--addons {
     padding: 20px; }
+
+#modal-contact a {
+  border-bottom: solid 1px;
+  transition: color 0.3s ease; }
+  #modal-contact a:hover {
+    text-decoration: none;
+    color: #c0392b; }
+
+#modal-contact .modal-footer {
+  text-align: center; }
 
 /*# sourceMappingURL=course.css.map */
