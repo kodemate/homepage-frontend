@@ -84,6 +84,36 @@ footer {
     .course--card .course--card__actions a.btn {
       padding: 10px 15px; }
 
+.article--card {
+  margin-top: 35px;
+  margin-bottom: 35px; }
+  .article--card .article--card__image {
+    position: relative; }
+    .article--card .article--card__image .category {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 5px 15px;
+      text-transform: uppercase;
+      font-weight: 600;
+      background-color: rgba(192, 57, 43, 0.8);
+      color: #fff; }
+  .article--card .article--card__content {
+    padding: 15px;
+    background-color: #fff;
+    border: solid 1px #f0f0f0;
+    border-top: none; }
+    .article--card .article--card__content .article--card__title {
+      font-weight: 600; }
+      .article--card .article--card__content .article--card__title a {
+        transition: color 0.3s ease; }
+        .article--card .article--card__content .article--card__title a:hover {
+          color: #c0392b;
+          text-decoration: none; }
+    .article--card .article--card__content .article--card__body {
+      margin-top: 10px;
+      font-size: 90%; }
+
 #block-meta {
   background-color: #eaeaea; }
 

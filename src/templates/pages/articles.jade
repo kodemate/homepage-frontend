@@ -1,0 +1,50 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - Articles page
+
+block prepend css
+    link(rel="stylesheet", href="css/articles.css")
+
+block content
+    include ../components/meta
+    include ../components/navbar
+
+    include ../mixins/header
+    +header('Tin tức', 'Tổng hợp các bài viết trong mục tin tức.')
+
+    section#block-articles
+        include ../mixins/article_card
+        .container
+            .row
+                .col-md-4
+                    +article_card()
+                .col-md-4
+                    +article_card()
+                .col-md-4
+                    +article_card()
+
+            .row
+                .col-md-4
+                    +article_card()
+                .col-md-4
+                    +article_card()
+                .col-md-4
+                    +article_card()
+
+            .row
+                .col-md-12.text-center
+                    ul.pagination
+                        li: a(href="#") &laquo;
+                        li: a(href="#") 1
+                        li: a(href="#") 2
+                        li: a(href="#") 3
+                        li: a(href="#") 4
+                        li: a(href="#") &raquo;
+
+
+
+
+
+    include ../components/footer
+

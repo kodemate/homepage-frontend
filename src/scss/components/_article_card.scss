@@ -1,0 +1,47 @@
+.article--card {
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+    .article--card__image {
+        position: relative;
+
+        img {
+
+        }
+
+        .category {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 5px 15px;
+            text-transform: uppercase;
+            font-weight: 600;
+            background-color: rgba(192,57,43, 0.8);
+            color: #fff;
+        }
+    }
+
+    .article--card__content {
+        padding: 15px;
+        background-color: #fff;
+        border: solid 1px #f0f0f0;
+        border-top: none;
+
+        .article--card__title {
+            font-weight: 600;
+
+            a {
+                transition: color 0.3s ease;
+                &:hover {
+                    color: $brand-danger;
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .article--card__body {
+            margin-top: 10px;
+            font-size: 90%;
+        }
+    }
+}

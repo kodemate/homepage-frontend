@@ -6044,13 +6044,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-h2 {
-  display: inline-block;
-  padding-bottom: 15px;
-  border-bottom: solid 1px #c0392b; }
+#block-articles {
+  background-color: #fbfbfb; }
 
-p {
-  margin-top: 25px;
-  line-height: 2.0; }
-
-/*# sourceMappingURL=about.css.map */
+/*# sourceMappingURL=articles.css.map */
