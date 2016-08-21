@@ -1,0 +1,39 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - Article page
+
+block prepend css
+    link(rel="stylesheet", href="css/article.css")
+
+block content
+    include ../components/meta
+    include ../components/navbar
+
+
+    section#block-header
+        //- img.img-responsive(src="https://source.unsplash.com/random/800x600", alt="")
+        .overlay
+        .container
+            .category Tin Tức
+            h1 Học lập trình PHP như thế nào  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, odio illum officiis.
+
+
+    section#block-content
+        .container
+            .row
+                .col-md-8.col-md-offset-2
+                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis molestias mollitia animi molestiae similique ut, id culpa blanditiis dicta aliquid. Voluptatum, illum quae suscipit tempora excepturi ratione, non tenetur pariatur voluptatem veritatis accusantium animi a optio molestias dicta ea possimus nam consequatur sapiente temporibus distinctio. Veritatis dicta repudiandae neque quos magnam est quae ullam cumque, debitis velit libero, corrupti dolorem sit sunt! Necessitatibus error molestiae suscipit explicabo sequi nesciunt a consequatur fugiat nobis ut sit, cupiditate officia voluptatibus impedit quo incidunt consequuntur rerum architecto autem perferendis nisi nulla labore maiores? Incidunt, molestiae, ab. Voluptatibus vitae veritatis aspernatur aliquam ipsum ab.
+
+            .row
+                .col-md-8.col-md-offset-2.part-nav
+                    a.btn.btn-link.pull-left(href="articles.html") #[i.fa.fa-arrow-left] Quay lại danh sách
+                    ul.pager.pull-right
+                        li: a.btn.btn-link(href="#") #[i.fa.fa-angle-left] Previous
+                        li: a.btn.btn-link(href="#") Next #[i.fa.fa-angle-right]
+
+
+
+
+    include ../components/footer
+
