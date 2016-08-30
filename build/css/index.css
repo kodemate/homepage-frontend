@@ -213,7 +213,7 @@ footer {
     footer .footer--social .footer--social__item {
       line-height: 2.0;
       display: inline-block;
-      margin-right: 30px; }
+      margin-right: 10px; }
       footer .footer--social .footer--social__item i.fa + i.fa {
         color: #2c3e50; }
       footer .footer--social .footer--social__item a:hover i.fa {
