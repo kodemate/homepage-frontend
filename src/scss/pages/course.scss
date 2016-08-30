@@ -25,6 +25,22 @@ h4 {
         line-height: 2.0;
     }
 
+    .card--about {
+        .part-objectives ul li,
+        .part-targets ul li,
+        .part-requirements ul li {
+            line-height: 2.0;
+        }
+
+        .part-description p {
+            line-height: 2.0;
+        }
+
+        .part-lessons ul li {
+            line-height: 50px;
+        }
+    }
+
     ul.common--list {
         margin-bottom: 30px;
 

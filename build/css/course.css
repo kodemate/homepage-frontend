@@ -6063,6 +6063,14 @@ h4 {
   background-color: #fbfbfb; }
   #block-course p {
     line-height: 2.0; }
+  #block-course .card--about .part-objectives ul li,
+  #block-course .card--about .part-targets ul li,
+  #block-course .card--about .part-requirements ul li {
+    line-height: 2.0; }
+  #block-course .card--about .part-description p {
+    line-height: 2.0; }
+  #block-course .card--about .part-lessons ul li {
+    line-height: 50px; }
   #block-course ul.common--list {
     margin-bottom: 30px; }
     #block-course ul.common--list li {
