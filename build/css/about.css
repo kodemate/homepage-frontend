@@ -6053,4 +6053,11 @@ p {
   margin-top: 25px;
   line-height: 2.0; }
 
+#block-founder a {
+  border-bottom: solid 1px;
+  transition: color 0.3s ease; }
+  #block-founder a:hover {
+    text-decoration: none;
+    color: #c0392b; }
+
 /*# sourceMappingURL=about.css.map */
