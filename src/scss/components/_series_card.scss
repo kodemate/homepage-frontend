@@ -1,0 +1,105 @@
+.series--card {
+
+    border: solid 1px #eaeaea;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 30px;
+
+    .series--card__price {
+
+        span {
+            height: 30px;
+            line-height: 30px;
+            vertical-align: middle;
+        }
+
+        .text {
+            margin-right: 10px;
+        }
+
+        .price {
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 10px;
+            background-color: $brand-success;
+            color: #fff;
+            border-radius: 500px;
+        }
+    }
+
+    .series--card__title {
+
+        h4 {
+            line-height: 1.7;
+            font-size: 16px;
+            a {
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $brand-danger;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .series--card__meta {
+
+        .text {
+            margin-right: 10px;
+        }
+
+        a {
+            color: #888;
+            transition: color 0.3s ease;
+
+            .category {
+                margin-right: 20px;
+            }
+
+            .level {
+            }
+
+            &:hover {
+                text-decoration: none;
+                color: #222;
+
+            }
+        }
+    }
+
+    .series--card__image {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        transition: opacity 0.3s ease;
+        &:hover {
+            opacity: 0.8;
+        }
+
+        img {
+        }
+    }
+
+    .series--card__summary {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        p {
+            font-size: 13px;
+        }
+    }
+
+    .series--card__actions {
+
+        a {
+            border: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+
+            &.btn {
+                padding: 10px 15px;
+            }
+        }
+    }
+}

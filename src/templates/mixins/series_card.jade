@@ -1,0 +1,23 @@
+mixin series_card(title, price, category, level, image_url, summary, url)
+    .series--card
+        .series--card__price
+            span.text Giá:
+            span.price #{price}
+        .series--card__title
+            h4
+                a(href="series-single.html") #{title}
+        .series--card__image
+            a(href="series-single.html")
+                img(src="#{image_url}", alt="", class="img-responsive")
+        .series--card__meta
+            span.text: #[i.fa.fa-book]
+            a(href="series-single.html")
+                span.category #{category}
+            span.text: #[i.fa.fa-user]
+            a(href="series-single.html")
+                span.level #{level}
+        .series--card__summary
+            p #{summary}
+        .series--card__actions
+            //- a(class="btn btn-info", href=url) Chi tiết
+            a(class="btn btn-block btn-danger", href=url) Chi tiết
