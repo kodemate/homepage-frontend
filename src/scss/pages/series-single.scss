@@ -1,0 +1,142 @@
+@import '../base';
+
+h2 {
+    margin-bottom: 35px;
+    display: inline-block;
+
+    &:after {
+        content: " ";
+        display: block;
+        background-color: $brand-danger;
+        margin-top: 10px;
+        height: 1px;
+        width: 100%;
+    }
+}
+
+h4 {
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+#block-course {
+    background-color: #fbfbfb;
+    p {
+        line-height: 2.0;
+    }
+
+    .card--about {
+        .part-objectives ul li,
+        .part-targets ul li,
+        .part-requirements ul li {
+            line-height: 2.0;
+        }
+
+        .part-description p {
+            line-height: 2.0;
+        }
+
+        .part-lessons ul li {
+            line-height: 50px;
+        }
+    }
+
+    ul.common--list {
+        margin-bottom: 30px;
+
+        li {
+            line-height: 2.0;
+        }
+    }
+
+    ul.lesson--list {
+        list-style-type: none;
+        padding-left: 0;
+        background-color: #fff;
+        border: solid 1px #eaeaea;
+
+        li {
+            line-height: 2.5;
+            padding: 20px 30px;
+            border-bottom: solid 1px #eaeaea;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            i.fa {
+                margin-right: 20px;
+            }
+
+            span.counter {
+                margin-right: 20px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            span.title {
+
+            }
+        }
+    }
+
+    .action-card {
+        &.affix {
+            top: 30px;
+            width: 260px;
+        }
+
+        .card--price {
+            // margin-top: 25px;
+            font-size: 32px;
+            background-color: $brand-success;
+            text-align: center;
+            color: #fff;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+        }
+
+        .card--info {
+            background-color: #fff;
+            border: solid 1px #eaeaea;
+            padding: 20px;
+
+            .meta {
+                margin-bottom: 15px;
+            }
+
+            .buttons {
+                margin-top: 20px;
+                a.btn {
+                    display: block;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding: 10px 15px;
+                }
+            }
+        }
+
+        .card--addons {
+            padding: 20px;
+        }
+    }
+}
+
+#modal-contact {
+    a {
+        border-bottom: solid 1px;
+
+        transition: color 0.3s ease;
+
+        &:hover {
+            text-decoration: none;
+
+            color: $brand-danger;
+        }
+    }
+
+    .modal-footer {
+        text-align: center;
+    }
+}

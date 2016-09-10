@@ -1,0 +1,99 @@
+extends ../layouts/master.jade
+
+block title
+    title KodeMate - Series Single
+
+block prepend css
+    link(rel="stylesheet", href="css/series-single.css")
+
+block content
+    include ../components/meta.jade
+    include ../components/navbar.jade
+
+    include ../mixins/header
+    +header('Học lập trình HTML/CSS', 'Khoá học cơ bản về lập trình HTML/CSS cho tất cả mọi người.')
+
+    section#block-course
+        .container
+            .row
+                .col-md-9
+                    .card--about
+                        img.featured-img(src="http://placehold.it/1280x720", alt="", class="img-responsive")
+
+                        h2 Giới thiệu về khoá học
+
+                        .row.part-objectives
+                            .col-md-4
+                                h4 Mục tiêu
+                            .col-md-8
+                                ul.common--list
+                                    li Học cơ bản về HTML, CSS.
+                                    li Sử dụng CSS để tạo kiểu dáng cho trang web.
+                                    li Sử dụng Javascript để tương tác.
+                                    li Triển khai web lên cloud server.
+                        .row.part-targets
+                            .col-md-4
+                                h4 Đối tượng
+                            .col-md-8
+                                ul.common--list
+                                    li Nhập môn, muốn bắt đầu tìm hiểu lập trình web và giao diện.
+                                    li Dành cho các bạn sinh viên muốn đi theo lộ trình thành lập trình viên web.
+                        .row.part-requirements
+                            .col-md-4
+                                h4 Yêu cầu
+                            .col-md-8
+                                ul.common--list
+                                    li Cần một chiếc laptop để lưu trữ tài liệu và thực hành trên lớp.
+                                    li Tâm lý sẵn sàng để tiếp thu công nghệ.
+                        .row.part-description
+                            .col-md-12
+                                h4 Nội dung khoá học
+                                p  Nền tảng web đã hình thành từ rất lâu đời và ngày nay đóng vai trò rất quan trọng trong sự phát triển của nền công nghiệp số. Nếu bạn muốn định hướng trở thành lập trình viên tạo web mà không biết bắt đầu từ đâu và làm như thế nào thì đây là khoá học phù hợp với bạn. Không chỉ được huấn luyện về web, các bạn còn được hướng dẫn sử dụng các công cụ lập trình web ưu việt và áp dụng các công nghệ làm web mới nhất hiện nay. Điều này sẽ giúp các bạn tạo nền tảng chắc chắc để phát triển các bước tiếp theo trong lộ trình trở thành một lập trình viên về web, web developer.
+
+                        .row.part-lessons
+                            .col-md-12
+                                h2 Chương trình
+
+                                ul.lesson--list
+                                    li
+                                        span.counter Bài 1:
+                                        span.title Gioi thieu ve lap trinh web và thiết lập môi trường.
+                                        span.length.pull-right 04:12
+                                    li
+                                        span.counter Bài 2:
+                                        span.title Học sử dụng các thẻ HTML và sử dụng CSS để tạo hình cho web.
+                                        span.length.pull-right 04:12
+                                    li
+                                        span.counter Bài 3:
+                                        span.title Cấu trúc khung của một trang web và cách phân chia bố cục.
+                                    li
+                                        span.counter Bài 4:
+                                        span.title Tìm hiểu và sử dụng Javascript để tương tác trên web.
+                                    li
+                                        span.counter Bài 5:
+                                        span.title Tạo một trang web cá nhân đơn giản.
+                                    li
+                                        span.counter Bài 6:
+                                        span.title Giói thiệu và sử dụng Bootstrap Framework.
+                                    li
+                                        span.counter Bài 7:
+                                        span.title Cách tạo web responsive trên nhiều màn hình.
+                                    li
+                                        span.counter Bài 80:
+                                        span.title Tạo một trang web về sách.
+
+
+                .col-md-3
+                    .action-card(data-spy="affix", data-offset-top="330")
+                        .card--price
+                            span 200,000 #[small VND]
+                        .card--info
+                            .meta: #[i.fa.fa-sun-o] Số bài: 10.
+                            .meta: #[i.fa.fa-clock-o] Thời lượng: 3h.
+                            .buttons
+                                a(class="btn btn-danger", href="#") #[i.fa.fa-hand-o-right] Đăng kí ngay
+                        .card--addons
+                            .meta: #[i.fa.fa-question-circle-o] #[a(href="faqs.html") Câu hỏi thường gặp]
+
+
+    include ../components/footer.jade

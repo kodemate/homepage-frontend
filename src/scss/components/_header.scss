@@ -1,3 +1,23 @@
-header {
+header.top {
     border-bottom: solid 1px #eaeaea;
+
+    .category {
+        padding: 5px 7px;
+        background-color: $brand-success;
+        display: inline-block;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-botoom: 0;
+        font-size: 12px;
+    }
+
+    .title {
+
+
+    }
+
+    .subtitle {
+
+    }
 }

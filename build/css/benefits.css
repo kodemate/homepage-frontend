@@ -224,8 +224,17 @@ footer {
 .navbar-collapse {
   padding-right: 0 !important; }
 
-header {
+header.top {
   border-bottom: solid 1px #eaeaea; }
+  header.top .category {
+    padding: 5px 7px;
+    background-color: #27ae60;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-botoom: 0;
+    font-size: 12px; }
 
 footer {
   background-color: #2c3e50;

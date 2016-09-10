@@ -6109,14 +6109,88 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-#block-available {
-  background-color: #fbfbfb; }
-  #block-available .row:first-child {
-    margin-bottom: 35px; }
+h2 {
+  margin-bottom: 35px;
+  display: inline-block; }
+  h2:after {
+    content: " ";
+    display: block;
+    background-color: #c0392b;
+    margin-top: 10px;
+    height: 1px;
+    width: 100%; }
 
-#block-coming-soon {
-  background-color: #fbfbfb; }
-  #block-coming-soon .row:first-child {
-    margin-bottom: 35px; }
+h4 {
+  text-transform: uppercase;
+  margin-bottom: 25px; }
 
-/*# sourceMappingURL=courses.css.map */
+#block-course {
+  background-color: #fbfbfb; }
+  #block-course p {
+    line-height: 2.0; }
+  #block-course .card--about .part-objectives ul li,
+  #block-course .card--about .part-targets ul li,
+  #block-course .card--about .part-requirements ul li {
+    line-height: 2.0; }
+  #block-course .card--about .part-description p {
+    line-height: 2.0; }
+  #block-course .card--about .part-lessons ul li {
+    line-height: 50px; }
+  #block-course ul.common--list {
+    margin-bottom: 30px; }
+    #block-course ul.common--list li {
+      line-height: 2.0; }
+  #block-course ul.lesson--list {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #fff;
+    border: solid 1px #eaeaea; }
+    #block-course ul.lesson--list li {
+      line-height: 2.5;
+      padding: 20px 30px;
+      border-bottom: solid 1px #eaeaea; }
+      #block-course ul.lesson--list li:last-child {
+        border-bottom: none; }
+      #block-course ul.lesson--list li i.fa {
+        margin-right: 20px; }
+      #block-course ul.lesson--list li span.counter {
+        margin-right: 20px;
+        text-transform: uppercase;
+        font-weight: 600; }
+  #block-course .action-card.affix {
+    top: 30px;
+    width: 260px; }
+  #block-course .action-card .card--price {
+    font-size: 32px;
+    background-color: #27ae60;
+    text-align: center;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  #block-course .action-card .card--info {
+    background-color: #fff;
+    border: solid 1px #eaeaea;
+    padding: 20px; }
+    #block-course .action-card .card--info .meta {
+      margin-bottom: 15px; }
+    #block-course .action-card .card--info .buttons {
+      margin-top: 20px; }
+      #block-course .action-card .card--info .buttons a.btn {
+        display: block;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 15px; }
+  #block-course .action-card .card--addons {
+    padding: 20px; }
+
+#modal-contact a {
+  border-bottom: solid 1px;
+  transition: color 0.3s ease; }
+  #modal-contact a:hover {
+    text-decoration: none;
+    color: #c0392b; }
+
+#modal-contact .modal-footer {
+  text-align: center; }
+
+/*# sourceMappingURL=series-single.css.map */
