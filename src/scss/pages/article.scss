@@ -5,11 +5,6 @@
     position: relative;
     height: 350px;
 
-    // img {
-    //     position: absolute;
-    //     height: 100%;
-    //     width: 100%;
-    // }
     background-image: url(https://source.unsplash.com/random/800x600);
     background-position: center center;
     background-size: cover;
@@ -20,10 +15,9 @@
         height: 100%;
         position: absolute;
 
-
         background: #485563; /* fallback for old browsers */
-        background: -webkit-linear-gradient(to top, rgba(44,62,80, 0.4) , rgba(44,62,80, 0.9)); /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to top, rgba(44,62,80, 0.4) , rgba(44,62,80, 0.9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: -webkit-linear-gradient(to top, rgba(44,62,80, 0.1) , rgba(44,62,80, 1)); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to top, rgba(44,62,80, 0.1) , rgba(44,62,80, 1)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     }
     .container {
@@ -32,11 +26,13 @@
         text-align: center;
 
         .category {
-            padding: 7px 15px;
+            padding: 7px 20px;
             display: inline-block;
-            background-color: rgba(192,57,43, 0.8);
+            // background-color: rgba(192,57,43, 1);
             text-transform: uppercase;
-            font-size: 16px;
+            border: solid 1px;
+            font-size: 14px;
+            font-weight: 600;
             color: #fff;
         }
 
@@ -51,6 +47,7 @@
 #block-content {
     p {
         line-height: 2.0;
+        font-size: 16px;
     }
 
     .part-nav {
